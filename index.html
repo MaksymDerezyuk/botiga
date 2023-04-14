@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CubertoWeb</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+        .fila1 {
+            /*Este apartado es el encabezado: Establece un ancho de 100% y añade margen debajo*/
+            margin-bottom: 6%;
+            background-color: white;
+            display: flex;
+        }
+        .fila234-1 {
+            /*Este apartado es todo el cuerpo: Habilitamos la opcion de flexibilidad y añadimos color de fondo*/
+            display: flex;
+            align-content: center;
+            background-color: #faf7ed;
+            flex-wrap: wrap;
+            
+        }
+        .fila234-2 {
+            /*Este apartado es todo el cuerpo: Habilitamos la opcion de flexibilidad y añadimos color de fondo*/
+            display: flex;
+            align-content: center;
+            background-color: black;
+            flex-wrap: wrap;
+            
+        }
+        .fila5 {
+            /*Este apartado es toda la zona negra: Habilitamos la opcion de flexibilidad, añadimos color de fondo y de fuente*/
+            background-color: black;
+            display: flex;
+            color: white;
+        }
+        .apartado-arriba {
+            /*Este apartado es la primera linea del apartado en negro*/
+            width: 100%;
+            margin-top: 6%;
+            margin-left: 6%;
+            font-size: 22px;
+            font-family: 'Lato', sans-serif;
+        }
+        .apartado-izq {
+            /*Este apartado equivale a todo el contenido del cuerpo situado a la izquierda*/
+            width: 50%;
+        }
+        .apartado-der {
+            /*Este apartado equivale a todo el contenido del cuerpo situado a la izquierda*/
+            width: 50%;
+        }
+        .apartado-abajo {
+            /*Este apartado equivale a los 4 contenedores del apartado negro: Aqui añadimos margenes y tamaños*/
+            width: 25%;
+            margin-top: 8%;
+            margin-left: 6%;
+            font-size: 12px;
+            font-family: 'Lato', sans-serif;
+            margin-bottom: 8%;
+        }
+        body { 
+            /*Este apartado equivale a todo el html*/
+            width: 70%;
+            margin-top: auto;
+            margin-left: 15%;
+            background-color: #bd4ef5;
+        }
+
+        .txt2-f1 {
+            /*Este apartado equivale al segundo texto del encabezado*/
+            margin-left: 160%;
+            font-family: 'Bebas Neue', cursive;
+            font-size: 70px;
+            
+        }
+        .txt1-f234 {
+            /*Este apartado equivale al primer texto de los apartados con texto del cuerpo*/
+            margin-left: 12%;
+            margin-top: 12%;
+            font-size: 25px;
+            font-family: 'Lato', sans-serif;
+        }
+        .txt2-f234 {
+            /*Este apartado equivale al segundo texto de los apartados con texto del cuerpo*/
+            margin-left: 12%;
+            font-size: 45px;
+            margin-right: 12%;
+            font-family: 'Lato', sans-serif;
+            color: gray;
+        }
+        .txt3-f234 {
+            /*Este apartado equivale al tercer texto de los apartados con texto del cuerpo*/
+            margin-left: 12%;
+            margin-bottom: 12%;
+            font-family: 'Lato', sans-serif;
+            font-size: 24px; 
+        }
+        .txt1-f234-2 {
+            /*Este apartado equivale al primer texto de los apartados con texto del cuerpo*/
+            margin-left: 12%;
+            margin-top: 12%;
+            font-size: 25px;
+            font-family: 'Lato', sans-serif;
+            color: white;
+        }
+        .txt2-f234-2 {
+            /*Este apartado equivale al segundo texto de los apartados con texto del cuerpo*/
+            margin-left: 12%;
+            font-size: 45px;
+            margin-right: 12%;
+            font-family: 'Lato', sans-serif;
+            color: gray;
+        }
+        .txt3-f234-2 {
+            /*Este apartado equivale al tercer texto de los apartados con texto del cuerpo*/
+            margin-left: 12%;
+            margin-bottom: 12%;
+            font-family: 'Lato', sans-serif;
+            font-size: 24px;
+            color: white;
+        }
+        img {
+            /*Este apartado equivale a todas las imagenes: Aqui establecemos un margen y tamaño*/
+            height: 75%;
+            margin-left: 20%;
+            border-radius: 10px;
+            margin-top: 12%;
+            width: 350px;
+        }
+        @media screen and (max-width:768px){
+            .fila234 {
+                /*Este apartado es todo el cuerpo: Habilitamos la opcion de flexibilidad*/
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .apartado-izq {
+                /*Este apartado equivale a todo el contenido del cuerpo situado a la izquierda: Aqui establecemos un ancho de 100%
+                para que el resto del contenido de desplaze hacia abajo*/
+                width: 100%;
+            }
+            .apartado-der {
+                /*Este apartado equivale a todo el contenido del cuerpo situado a la derecha: Aqui establecemos un ancho de 100%
+                para que el resto del contenido de desplaze hacia abajo*/
+                width: 100%;
+            }
+            .fila1 {
+                flex-direction: row;
+            }
+            img {
+                /*Aqui estilizamos las imagenes para que se visualizen de manera correcta y ordenada*/
+                margin-left: 5%;
+                margin-right: 5%;
+                width: 90%;
+                height: 85%;
+                margin-top: 5%;
+                margin-bottom: 5%;
+            }
+            .txt1-f234, .txt2-f234, .txt3-f234 {
+                /*Este apartado equivale a todos los textos del cuerpo y establece un margen*/
+                margin-left: 5%;
+            }
+            .txt1-f234 {
+                /*Establece tamaño de fuente*/
+                font-size: 24px;
+            }
+            .txt2-f234 {
+                /*Establece tamaño de fuente*/
+                font-size: 28px;
+            }
+            .txt3-f234 {
+                /*Establece tamaño de fuente*/
+                font-size: 18px;
+            }
+            .fila5 {
+                /*Este apartado es la parte en negro: Habilitamos la opcion de flexibilidad*/
+                display: flex;
+                flex-wrap: wrap; 
+            }
+            .apartado-abajo {
+                /*Aqui establecemos un ancho para que solo hayan 2 casillas por linea*/
+                width: 42%;
+                font-size: 9px;
+            }
+            .apartado-arriba {
+                /*Aqui establecemos una fuente*/
+                font-size: 18px;
+            }
+        }   
+    </style>
+</head>
+<body>
+    <!--Este apartado es el encabezado-->
+    <div class="fila1">
+        <div class="apartado1-fil1">
+            <h1 class="txt2-f1">Maxigames</h1>
+        </div>
+    </div>
+    <!--Este apartado es todo el cuerpo-->
+    <div class="fila234-1">
+        <div class="apartado-der">
+            <!--Esto es la primera imagen-->
+            <img type="png" src="img/mw2.jpg" alt="imagen-1">
+        </div>
+        <div class="apartado-izq">
+            <h3 class="txt1-f234">Disponible para PS4, XBOX ONE y PC</h3>
+            <h1 class="txt2-f234">Call of Duty: Modern Warfare II</h1>
+            <h3 class="txt1-f234">59.99€</h3>
+            <h4 class="txt3-f234"><a href="./mw2.html">Más información</a></h4>
+        </div>
+    </div>
+    <!--Este apartado es todo el cuerpo-->
+    <div class="fila234-2">
+        <div class="apartado-izq">
+            <!--Esto es la segunda imagen-->
+            <img type="png" src="img/GTA.jpg" alt="imagen-2">
+        </div>
+        <div class="apartado-der">
+            <h3 class="txt1-f234-2">Disponible para PS4, XBOX ONE y PC</h3>
+            <h1 class="txt2-f234-2">Grand Theft Auto V</h1>
+            <h3 class="txt1-f234-2">19.99€</h3>
+            <h4 class="txt3-f234-2"><a href="./GTA.html">Más información</a></h4>
+        </div>
+    </div>
+    <!--Este apartado es todo el cuerpo-->
+    <div class="fila234-1">
+        <div class="apartado-der">
+            <!--Esto es la segunda imagen-->
+            <img type="png" src="img/battlefront.jpg" alt="imagen-3">
+        </div>
+        <div class="apartado-izq">
+            <h3 class="txt1-f234">Disponible para PS4, XBOX ONE y PC</h3>
+            <h1 class="txt2-f234">Star Wars: Battlefront II</h1>
+            <h3 class="txt1-f234">19.99€</h3>
+            <h4 class="txt3-f234"><a href="./battlefront.html">Más información</a></h4>
+        </div>>
+    </div>
+    <!--Este apartado es todo el cuerpo-->
+    <div class="fila234-2">
+        <div class="apartado-der">
+            <!--Esto es la segunda imagen-->
+            <img type="png" src="img/spiderman.jpg" alt="imagen-3">
+        </div>
+        <div class="apartado-der">
+            <h3 class="txt1-f234-2">Disponible para PS4</h3>
+            <h1 class="txt2-f234-2">Marvel: Spider-man (GOTY Edition)</h1>
+            <h3 class="txt1-f234-2">24.99€</h3>
+            <h4 class="txt3-f234-2"><a href="./spiderman.html">Más información</a></h4>
+        </div>
+    </div>
+    <!--Este apartado es todo el cuerpo-->
+    <div class="fila234-1">
+        <div class="apartado-der">
+            <!--Esto es la segunda imagen-->
+            <img type="png" src="img/needforspeed.jpg" alt="imagen-3">
+        </div>
+        <div class="apartado-izq">
+            <h3 class="txt1-f234">Disponible para PS4, XBOX ONE y PC</h3>
+            <h1 class="txt2-f234">Need for Speed: Heat</h1>
+            <h3 class="txt1-f234">29.99€</h3>
+            <h4 class="txt3-f234"><a href="./needforspeed.html">Más información</a></h4>
+        </div>
+    </div>
+    <!--Este apartado es todo el cuerpo-->
+    <div class="fila234-2">
+        <div class="apartado-der">
+            <!--Esto es la segunda imagen-->
+            <img type="png" src="img/sims.jpg" alt="imagen-3">
+        </div>
+        <div class="apartado-der">
+            <h3 class="txt1-f234-2">Disponible para PS4, XBOX ONE y PC</h3>
+            <h1 class="txt2-f234-2">Los Sims 4 (Edición Deluxe)</h1>
+            <h3 class="txt1-f234-2">9.99€</h3>
+            <h4 class="txt3-f234-2"><a href="./sims.html">Más información</a></h4>
+        </div>
+    </div>
+    <!--Este apartado es todo el cuerpo-->
+    <div class="fila234-1">
+        <div class="apartado-der">
+            <!--Esto es la segunda imagen-->
+            <img type="png" src="img/section-3-m.png" alt="imagen-3">
+        </div>
+        <div class="apartado-izq">
+            <h3 class="txt1-f234">Disponible para PS4, XBOX ONE y PC</h3>
+            <h1 class="txt2-f234">Call of Duty: Modern Warfare II</h1>
+            <h3 class="txt1-f234">59.99€</h3>
+            <h4 class="txt3-f234"><a href="./mw2.html">Más información</a></h4>
+        </div>
+    </div>
+    <!--Este apartado es todo el cuerpo-->
+    <div class="fila234-2">
+        <div class="apartado-der">
+            <!--Esto es la segunda imagen-->
+            <img type="png" src="img/section-3-m.png" alt="imagen-3">
+        </div>
+        <div class="apartado-der">
+            <h3 class="txt1-f234-2">Disponible para PS4, XBOX ONE y PC</h3>
+            <h1 class="txt2-f234-2">Grand Theft Auto V</h1>
+            <h3 class="txt1-f234-2">19.99€</h3>
+            <h3 class="txt1-f234-2">Lanzamiento: 17/09/2013</h3>
+            <h4 class="txt3-f234-2"><a href="./GTA.html">Más información</a></h4>
+        </div>
+    </div>
+    <!--Este apartado es todo el cuerpo-->
+    <div class="fila234-1">
+        <div class="apartado-der">
+            <!--Esto es la segunda imagen-->
+            <img type="png" src="img/section-3-m.png" alt="imagen-3">
+        </div>
+        <div class="apartado-izq">
+            <h3 class="txt1-f234">Disponible para PS4, XBOX ONE y PC</h3>
+            <h1 class="txt2-f234">Call of Duty: Modern Warfare II</h1>
+            <h3 class="txt1-f234">59.99€</h3>
+            <h4 class="txt3-f234"><a href="./mw2.html">Más información</a></h4>
+        </div>
+    </div>
+    <!--Este apartado es todo el cuerpo-->
+    <div class="fila234-2">
+        <div class="apartado-der">
+            <!--Esto es la segunda imagen-->
+            <img type="png" src="img/section-3-m.png" alt="imagen-3">
+        </div>
+        <div class="apartado-der">
+            <h3 class="txt1-f234-2">Disponible para PS4, XBOX ONE y PC</h3>
+            <h1 class="txt2-f234-2">Grand Theft Auto V</h1>
+            <h3 class="txt1-f234-2">19.99€</h3>
+            <h3 class="txt1-f234-2">Lanzamiento: 17/09/2013</h3>
+            <h4 class="txt3-f234-2"><a href="./GTA.html">Más información</a></h4>
+        </div>
+    </div>
+    <!--Este apartado es todo el cuerpo-->
+    <div class="fila234-1">
+        <div class="apartado-der">
+            <!--Esto es la segunda imagen-->
+            <img type="png" src="img/section-3-m.png" alt="imagen-3">
+        </div>
+        <div class="apartado-izq">
+            <h3 class="txt1-f234">Disponible para PS4, XBOX ONE y PC</h3>
+            <h1 class="txt2-f234">Call of Duty: Modern Warfare II</h1>
+            <h3 class="txt1-f234">59.99€</h3>
+            <h4 class="txt3-f234"><a href="./mw2.html">Más información</a></h4>
+        </div>
+    </div>
+    <!--Este apartado es todo el cuerpo-->
+    <div class="fila234-2">
+        <div class="apartado-der">
+            <!--Esto es la segunda imagen-->
+            <img type="png" src="img/section-3-m.png" alt="imagen-3">
+        </div>
+        <div class="apartado-der">
+            <h3 class="txt1-f234-2">Disponible para PS4, XBOX ONE y PC</h3>
+            <h1 class="txt2-f234-2">Grand Theft Auto V</h1>
+            <h3 class="txt1-f234-2">19.99€</h3>
+            <h3 class="txt1-f234-2">Lanzamiento: 17/09/2013</h3>
+            <h4 class="txt3-f234-2"><a href="./GTA.html">Más información</a></h4>
+        </div>
+    </div>
+    <!--Este apartado es el apartado de negro-->
+    <div class="fila5">
+        <div class="apartado-arriba"><strong>Have and idea? Tell us about it</strong></div>
+    </div>
+    <div class="fila5">
+        <!--Esto es la primera celda-->
+        <div class="apartado-abajo">
+            <h4 class="txtabajo"><strong>Product</strong></h4>
+            <h4 class="txtabajo">Features</h4>
+            <h4 class="txtabajo">Security</h4>
+            <h4 class="txtabajo">Enterprise</h4>
+            <h4 class="txtabajo">Customer stories</h4>
+        </div>
+        <!--Esto es la segunda celda-->
+        <div class="apartado-abajo">
+            <h4 class="txtabajo"><strong>Platform</strong></h4>
+            <h4 class="txtabajo">Developer API</h4>
+            <h4 class="txtabajo">Partners</h4>
+            <h4 class="txtabajo">Atom</h4>
+            <h4 class="txtabajo">Electron</h4>
+        </div>
+        <!--Esto es la tercera celda-->
+        <div class="apartado-abajo"> 
+            <h4 class="txtabajo"><strong>Support</strong></h4>
+            <h4 class="txtabajo">Help</h4>
+            <h4 class="txtabajo">Community forum</h4>
+            <h4 class="txtabajo">Learining Lab</h4>
+            <h4 class="txtabajo">Certifications</h4>
+        </div>
+        <!--Esto es la cuarta celda-->
+        <div class="apartado-abajo">
+            <h4 class="txtabajo"><strong>Company</strong></h4>
+            <h4 class="txtabajo">About</h4>
+            <h4 class="txtabajo">Blog</h4>
+            <h4 class="txtabajo">Careers</h4>
+            <h4 class="txtabajo">Press</h4>
+        </div>
+    </div>
+</body>
+</html>
