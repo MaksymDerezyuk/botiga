@@ -1,0 +1,289 @@
+.encabezado {
+    /*Este apartado es el encabezado: Establece un ancho de 100% y añade margen debajo*/
+    margin-bottom: 6%;
+    background-color: white;
+    display: block;
+    text-align: center;
+}
+.subtitulo {
+    /*Este apartado es el sutitulo del encabezado*/
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 22px;
+}
+.juego-blanco {
+    /*Este apartado es la casilla de color blanco de los juegos: Habilitamos la opcion de flexibilidad y añadimos color de fondo*/
+    display: flex;
+    align-content: center;
+    background-color: #faf7ed;
+    flex-wrap: wrap;
+}
+.juego-blanco-j {
+    /*Este apartado es la casilla del juego en su pagina personal: Habilitamos la opcion de flexibilidad y añadimos color de fondo*/
+    display: flex;
+    align-content: center;
+    background-color: #faf7ed;
+    flex-wrap: wrap;
+}
+.juego-negro {
+    /*Este apartado es la casilla de color negro de los juegos: Habilitamos la opcion de flexibilidad y añadimos color de fondo*/
+    display: flex;
+    align-content: center;
+    background-color: black;
+    flex-wrap: wrap;
+    
+}
+.piepagina {
+    /*Este apartado es el pie de pagina: Habilitamos la opcion de flexibilidad, añadimos color de fondo*/
+    background-color: white;
+    display: flex;
+}
+.piepagina-j {
+    /*Este apartado es el pie de pagina de las paginas de los juegos: Habilitamos la opcion de flexibilidad, añadimos color de fondo*/
+    background-color: #faf7ed;
+    display: flex;
+}
+.enlacePdP {
+    /*Este apartado es el enlace del pie de pagina*/
+    width: 100%;
+    margin-top: 6%;
+    font-size: 22px;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 5%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.enlacePdP-j {
+    /*Este apartado es el enlace del pie de pagina en los juegos*/
+    width: 100%;
+    margin-top: 6%;
+    font-size: 22px;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 5%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.imgjuego {
+    /*Este apartado equivale a las imagenes*/
+    width: 50%;
+}
+.imgjuego-j {
+    width: 50%;
+}
+.textojuego {
+    /*Este apartado equivale a todo el texto en los juegos*/
+    width: 50%;
+}
+.textojuego-j {
+    width: 50%;
+}
+body { 
+    /*Este apartado equivale a todo el html*/
+    width: 70%;
+    margin-top: auto;
+    margin-left: 15%;
+    background-color: #bd4ef5;
+}
+.body-j { 
+    /*Este apartado equivale a todo el html en las paginas de los juegos*/
+    width: 80%;
+    margin-top: auto;
+    margin-left: 10%;
+    background-color: #bd4ef5;
+}
+.titulo {
+    /*Este apartado equivale al titulo del encabezado*/
+    font-family: 'Bebas Neue', cursive;
+    font-size: 70px;
+    
+}
+.txt1 {
+    /*Este apartado equivale al primer texto de los apartados de videojuegos*/
+    margin-left: 12%;
+    margin-top: 12%;
+    font-size: 25px;
+    font-family: 'Lato', sans-serif;
+}
+.txt2 {
+    /*Este apartado equivale al segundo texto de los apartados de videojuegos*/
+    margin-left: 12%;
+    font-size: 45px;
+    margin-right: 12%;
+    font-family: 'Lato', sans-serif;
+    color: gray;
+}
+.txt3 {
+    /*Este apartado equivale al tercer texto de los apartados de videojuegos*/
+    margin-left: 12%;
+    margin-bottom: 12%;
+    font-family: 'Lato', sans-serif;
+    font-size: 24px; 
+}
+.txt1-j {
+    /*Este apartado equivale al primer texto de los apartados de videojuegos*/
+    margin-left: 12%;
+    margin-top: 7%;
+    margin-right: 5%;
+    font-size: 25px;
+    font-family: 'Lato', sans-serif;
+}
+.txt2-j {
+    /*Este apartado equivale al segundo texto de los apartados de videojuegos*/
+    margin-left: 12%;
+    font-size: 45px;
+    margin-right: 12%;
+    font-family: 'Lato', sans-serif;
+    color: gray;
+    margin-top: 12%;
+}
+.txt3-j {
+    /*Este apartado equivale al tercer texto de los apartados de videojuegos*/
+    margin-left: 12%;
+    margin-bottom: 7%;
+    font-family: 'Lato', sans-serif;
+    font-size: 24px; 
+}
+.txt1-2 {
+    /*Este apartado equivale al primer texto de los apartados de videojuegos*/
+    margin-left: 12%;
+    margin-top: 12%;
+    font-size: 25px;
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
+.txt2-2 {
+    /*Este apartado equivale al segundo texto de los apartados de videojuegos*/
+    margin-left: 12%;
+    font-size: 45px;
+    margin-right: 12%;
+    font-family: 'Lato', sans-serif;
+    color: gray;
+}
+.txt3-2 {
+    /*Este apartado equivale al tercer texto de los apartados de videojuegos*/
+    margin-left: 12%;
+    margin-bottom: 12%;
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    color: white;
+}
+img {
+    /*Este apartado equivale a todas las imagenes: Aqui establecemos un margen y tamaño*/
+    height: 75%;
+    margin-left: 20%;
+    border-radius: 10px;
+    margin-top: 12%;
+    width: 350px;
+}
+#juego {
+    height: 75%;
+    margin-left: 20%;
+    border-radius: 10px;
+    margin-top: 12%;
+    width: 500px;
+}
+@media screen and (max-width:768px){
+    .imgjuego {
+        /*Este apartado equivale a las imagenes: Aqui establecemos un ancho de 100%
+        para que el resto del contenido de desplaze hacia abajo*/
+        width: 100%;
+    }
+    .imgjuego-j {
+        /*Este apartado equivale a las imagenes: Aqui establecemos un ancho de 100%
+        para que el resto del contenido de desplaze hacia abajo*/
+        width: 100%;
+    }
+    .textojuego {
+        /*Este apartado equivale al texto de los juegos: Aqui establecemos un ancho de 100%
+        para que el resto del contenido de desplaze hacia abajo*/
+        width: 100%;
+    }
+    .textojuego-j {
+        /*Este apartado equivale al texto de los juegos: Aqui establecemos un ancho de 100%
+        para que el resto del contenido de desplaze hacia abajo*/
+        width: 100%;
+    }
+    .encabezado {
+        flex-direction: row;
+    }
+    img {
+        /*Aqui estilizamos las imagenes para que se visualizen de manera correcta y ordenada*/
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+        height: 85%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    #juego {
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+        height: 85%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .txt1, .txt2, .txt3 {
+        /*Este apartado equivale a todos los textos del cuerpo y establece un margen*/
+        margin-left: 5%;
+    }
+    .txt1 {
+        /*Establece tamaño de fuente*/
+        font-size: 24px;
+    }
+    .txt2 {
+        /*Establece tamaño de fuente*/
+        font-size: 28px;
+    }
+    .txt3 {
+        /*Establece tamaño de fuente*/
+        font-size: 18px;
+    }
+    .txt1-j, .txt2-j, .txt3-j {
+        /*Este apartado equivale a todos los textos del cuerpo y establece un margen*/
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .txt1-j {
+        /*Establece tamaño de fuente*/
+        font-size: 24px;
+    }
+    .txt2-j {
+        /*Establece tamaño de fuente*/
+        font-size: 28px;
+    }
+    .txt3-j {
+        /*Establece tamaño de fuente*/
+        font-size: 18px;
+    }
+    .txt1-2, .txt2-2, .txt3-2 {
+        /*Este apartado equivale a todos los textos del cuerpo y establece un margen*/
+        margin-left: 5%;
+    }
+    .txt1-2 {
+        /*Establece tamaño de fuente*/
+        font-size: 24px;
+    }
+    .txt2-2 {
+        /*Establece tamaño de fuente*/
+        font-size: 28px;
+    }
+    .txt3-2 {
+        /*Establece tamaño de fuente*/
+        font-size: 18px;
+    }
+    .piepagina {
+        /*Este apartado es el pie de pagina: Habilitamos la opcion de flexibilidad*/
+        display: flex;
+        flex-wrap: wrap; 
+    }
+    .enlacePdP {
+        /*Aqui establecemos una fuente*/
+        font-size: 18px;
+    }
+    .enlacePdP-j {
+        /*Aqui establecemos una fuente*/
+        font-size: 18px;
+    }
+}   
